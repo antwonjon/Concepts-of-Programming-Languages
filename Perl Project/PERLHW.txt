@@ -1,0 +1,21 @@
+Anthony Skinner
+1. day
+2. song
+3. 40
+4. algebra
+5. 3
+6. happy day at all over you want you want you want you want you want you want you want you
+7. sad song is my heart is my heart is my heart is my heart is my heart is my heart is my heart 
+8. hey my heart is my heart is my heart is my heart is my heart is my heart is my heart is my
+9. little bit love you want you want you want you want you want you want you want you 
+10. amore mio babbino caro gianni schicchi
+11. love you want you want you want you want you want you want you want you want you want you
+12. A way to solve this problem would be to remove a few more words like "you" or "my"
+13. montana prairie leaguesepangel 9 5 n2 f major op de la vida es el amor de la vida es el
+14. bob rogers first time i love me down road again kathleen o'hara
+15. moon is love me down road again kathleen o'hara
+16. I like how perl really utilizes the regex. It can really take massive amounts of data and sort through it. That is super powerful.
+17. I dislike the sytax, it's little bit clunky to get used to. I also don't like the vague warnings it gives.
+18. It was really rewarding when I got certain parts done. It really tedious trying to find all the little errors that kept messing up my code. In fact, my code blew up at the last minute which took me 5 hours to figure out what was going wrong with it. Turned out I needed to chomp() something. Figures....
+19. I spent between 15 and 20 hours trying to get this figured out, if not more.
+20. I might use Perl again. Probably with projects that have massive amounts of data.
