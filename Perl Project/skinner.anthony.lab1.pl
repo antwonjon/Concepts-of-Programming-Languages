@@ -84,12 +84,16 @@ my $input = "";
 while ($input ne "q"){
 	print"\n";
 	print "Enter a word [Enter 'q' to quit]: ";
+	
 	my $sentence = "";
 	my $input = <STDIN>;
 	my $j = 0;
 	chomp($input);
-
-	while($input ne "q" && $j < 20 ){
+	if($input eq "q"){
+		print "\nEXITING PROGRAM\n";
+		last;
+	}
+	while($input ne " " && $j < 20 ){
 		#concats input to form sentence
 		$sentence .= $input . " ";
 		$input = mcw($input, \@sortedBigram, $countBigrams);
@@ -99,10 +103,6 @@ while ($input ne "q"){
 	}
 	chomp($sentence);
 	chomp($input);
-	if($input eq "q"){
-		print "\nEXITING PROGRAM\n";
-		last;
-	}
 	print "$sentence\n";
 }
 
@@ -125,7 +125,7 @@ sub mcw{
 	
 	my @matchedWords;
 	my @words;
-	my $highest = 0;
+	
 	#this gathers an array of matched words in the bigram
 	foreach my $phrase (@bigram){
 		#split sorted bigram array to compare it with the input in order to get all the bigrams that start with that input 
@@ -134,21 +134,25 @@ sub mcw{
 		if($words[0] eq $input){
 			#print "$countBigrams{$bigram[$i]} $bigram[$i] \n";
 			push(@matchedWords, $phrase);
-			#gets the highest frequency for later
-			if($countBigrams{$phrase}>=$highest){
-				$highest = $countBigrams{$phrase};
-			}
+			
 		}
 	}
 
-	
+	#gets highest frequency for later
+	my $highest = 0;
+	foreach my $match (@matchedWords){
+		if($countBigrams{$match}>$highest){
+				$highest = $countBigrams{$match};
+				print "$highest\n";
+			}
+	}
 	#this picks from those matched words, the ones with the highest frequency
 	my @highestFreq;
 	
 	foreach my $match (@matchedWords){
 		if($countBigrams{$match} eq $highest){
 			push(@highestFreq, $match);
-			
+			print "you are adding to highest frequency the word $match\n";
 		}
 	}
 	
@@ -160,7 +164,7 @@ sub mcw{
 		return $words[1];
 	}
 	
-	return "q";
+	return " ";
 }
 
 
