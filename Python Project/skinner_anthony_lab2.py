@@ -1,6 +1,9 @@
 # Anthony Skinner CSCI 305
 # I did this one solo
 
+# This is the most recent version of python, so version 3
+# The biggest thing when running it is to include quotes with everything, so putting "Bozeman, Billings" instead of just Bozeman, Billings
+
 import re
 
 
