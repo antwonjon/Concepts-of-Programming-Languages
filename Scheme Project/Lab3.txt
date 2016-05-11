@@ -1,0 +1,18 @@
+Anthony Skinner
+Lab 3 - Scheme
+
+1) (3 8 9 2 4 10)
+2) Function f adds 1 to each one of the elements
+3) Check if the list is null
+4) If it is null create an empty list
+5) Else create add one to each element by calling the list recursively
+6) #f
+7) ERROR: Unbound variable: d
+8) #f
+9) #f
+10)(blue eggs cheese ham and sandwich)
+11) (and)
+12) Once you get the way the methods are built, its not too bad. It just takes a while to get used to having to use recursion every method.
+13) Having to think recursively every time kind of bugs me.
+14) 6 hours
+15) Didn't super enjoy this lab. I probably won't use Scheme again. Good experience though.
